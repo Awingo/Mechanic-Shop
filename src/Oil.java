@@ -29,13 +29,17 @@ Double quartPrice = 0.00;
 		Double quartPrice = 0.00;
 		Double regularOil = 8.99;
 		Double syntheticOil = 10.49;
+		Double labor = 15.00;
+		Double fullPrice = 0.00;
 		if (oilChoice == 1) {
 			quartPrice = (regularOil * quarts);
+			fullPrice = (quartPrice + labor);
 		}
 		if(oilChoice == 2) {
 			quartPrice = (syntheticOil * quarts);
+			fullPrice = ( quartPrice + labor);
 		}
-		System.out.println("Your oil price is: " + quartPrice);
+		System.out.println("Your oil price is: " + quartPrice + " After labor, your total is: " + fullPrice);
 		return quartPrice;
 		
 	}
