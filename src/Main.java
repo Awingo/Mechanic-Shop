@@ -6,9 +6,31 @@ public class Main {
 	static Tires a = new Tires();
 	static Rotation b = new Rotation();
 	static AirConditioning c = new AirConditioning();
+	
 	public static void main(String[] args) {	
+		Employee E1 = new Employee("Bob", "Oil Changer");
+		Employee E2 = new Employee("Jim", "Oil Changer");
+		Employee E3 = new Employee("Mack", "Tire Changer");
+		Employee E4 = new Employee("Steve", "Tire Changer");
+		Employee E5 = new Employee("Bruce", "Mechanic");
+		Employee E6 = new Employee("Frank", "Mechanic");
+		Employee E7 = new Employee("Jane", "Assistant Manager"); // Because Equality
+		Employee E8 = new Employee("Rob", "Manager");
+		Employee[] ShiftOneEmployees = {E1,E2,E3,E4,E5,E6,E7,E8}; 
+		Shift S1 = new Shift("Shift One", ShiftOneEmployees);
+		Employee E9 = new Employee("Josh", "Oil Changer");
+		Employee E10 = new Employee("Lee", "Oil Changer");
+		Employee E11 = new Employee("Michael", "Tire Changer");
+		Employee E12 = new Employee("Justin", "Tire Changer");
+		Employee E13 = new Employee("Ed", "Mechanic");
+		Employee E14 = new Employee("Mark", "Mechanic");
+		Employee E15 = new Employee("John", "Assistant Manager");
+		Employee E16 = new Employee("Murphy", "Manager");
+		Employee[] ShiftTwoEmployees = {E9,E10,E11,E12,E13,E14,E15,E16};
+		Shift S2 = new Shift("Shift Two", ShiftTwoEmployees);
 		int choice = selectService();
 		provideService(choice);
+
 
 	}
 	public static int selectService(){
