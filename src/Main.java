@@ -6,6 +6,7 @@ public class Main {
 	static Tires a = new Tires();
 	static Rotation b = new Rotation();
 	static AirConditioning c = new AirConditioning();
+//	static CompanyInformation d = new CompanyInformation();
 	
 	public static void main(String[] args) {	
 		Employee E1 = new Employee("Bob", "Oil Changer");
@@ -30,6 +31,7 @@ public class Main {
 		Shift S2 = new Shift("Shift Two", ShiftTwoEmployees);
 		int choice = selectService();
 		provideService(choice);
+
 
 
 	}
@@ -88,8 +90,10 @@ public class Main {
 		case 5:
 			System.out.println("You have chosen Maintainance" + "\n" + "Please select what issue you are having");
 			break;
-		case 6:
-			break;
+//		case 6:
+//			System.out.println("Would you like information about our comapny? 1: Yes / 2: No");
+//			int companyChoice = scan.nextInt();
+//			break;
 		}
 
 	}
