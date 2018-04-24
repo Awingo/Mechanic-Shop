@@ -1,7 +1,7 @@
 
 public class Oil {
 
-Double quartPrice = 0.00;
+	double quartPrice = 0.00;
 	public int getQuarts(int engineSize){
 		int quarts = 0;
 		switch(engineSize) {
@@ -25,12 +25,12 @@ Double quartPrice = 0.00;
 		}
 		return quarts;
 	}
-	public Double getQuartPrice(int oilChoice, int quarts) {
-		Double quartPrice = 0.00;
-		Double regularOil = 8.99;
-		Double syntheticOil = 10.49;
-		Double labor = 15.00;
-		Double fullPrice = 0.00;
+	public double getQuartPrice(int oilChoice, int quarts) {
+		double quartPrice = 0.00;
+		double regularOil = 8.99;
+		double syntheticOil = 10.49;
+		double labor = 15.00;
+		double fullPrice = 0.00;
 		if (oilChoice == 1) {
 			quartPrice = (regularOil * quarts);
 			fullPrice = (quartPrice + labor);

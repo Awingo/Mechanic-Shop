@@ -1,9 +1,9 @@
 
 public class Tires {
 	int tireType = 0;
-	Double totalCost = 0.0;
-	Double labor = (15.00 * 4);
-	Double totalFull = 0.00;
+	double totalCost = 0.0;
+	double labor = (15.00 * 4);
+	double totalFull = 0.00;
 	public int mainChoice(int vehicleChoice, int tireChoice) {
 		switch(vehicleChoice) {
 		case 1:
@@ -95,12 +95,12 @@ public class Tires {
 		return tireType;	
 	}
 	
-	public Double carTires(int tireChoice){
-		Double allSeason = 100.00;
-		Double snow = 120.00;
-		Double performance = 300.00;
-		Double taxTotal = 0.00;
-		Double tax = 0.15;
+	public double carTires(int tireChoice){
+		double allSeason = 100.00;
+		double snow = 120.00;
+		double performance = 300.00;
+		double taxTotal = 0.00;
+		double tax = 0.15;
 		if(tireChoice == 1) {
 			totalCost = (allSeason * 4);
 			taxTotal = (totalCost * tax);
@@ -122,13 +122,13 @@ public class Tires {
 		return totalCost;
 		
 	}
-	public Double truckTires(int tireChoice){
-		Double allSeason = 250.00;
-		Double snow = 340.00;
-		Double performance = 400.00;
-		Double offRoad = 200.00;
-		Double taxTotal = 0.00;
-		Double tax = 0.15;
+	public double truckTires(int tireChoice){
+		double allSeason = 250.00;
+		double snow = 340.00;
+		double performance = 400.00;
+		double offRoad = 200.00;
+		double taxTotal = 0.00;
+		double tax = 0.15;
 		
 		if(tireChoice == 1) {
 			totalCost = (allSeason * 4);
@@ -157,12 +157,12 @@ public class Tires {
 		return totalCost;
 		
 	}
-	public Double vanTires(int tireChoice){
-		Double allSeason = 80.00;
-		Double snow = 120.00;
-		Double performance = 110.00;
-		Double taxTotal = 0.00;
-		Double tax = 0.15;
+	public double vanTires(int tireChoice){
+		double allSeason = 80.00;
+		double snow = 120.00;
+		double performance = 110.00;
+		double taxTotal = 0.00;
+		double tax = 0.15;
 		if(tireChoice == 1) {
 			totalCost = (allSeason * 4);
 			taxTotal = (totalCost * tax);
@@ -184,12 +184,12 @@ public class Tires {
 		return totalCost;
 		
 	}
-	public Double motorcycleTires(int tireChoice){
-		Double allSeason = 200.99;
-		Double snow = 329.00;
-		Double performance = 670.00;
-		Double taxTotal = 0.00;
-		Double tax = 0.15;
+	public double motorcycleTires(int tireChoice){
+		double allSeason = 200.99;
+		double snow = 329.00;
+		double performance = 670.00;
+		double taxTotal = 0.00;
+		double tax = 0.15;
 		if(tireChoice == 1) {
 			totalCost = (allSeason * 2);
 			taxTotal = (totalCost * tax);

@@ -6,7 +6,9 @@ public class Main {
 	static Tires a = new Tires();
 	static Rotation b = new Rotation();
 	static AirConditioning c = new AirConditioning();
-//	static CompanyInformation d = new CompanyInformation();
+	static VendingOption d = new VendingOption();
+
+	
 	
 	public static void main(String[] args) {	
 		Employee E1 = new Employee("Bob", "Oil Changer");
@@ -29,7 +31,13 @@ public class Main {
 		Employee E16 = new Employee("Murphy", "Manager");
 		Employee[] ShiftTwoEmployees = {E9,E10,E11,E12,E13,E14,E15,E16};
 		Shift S2 = new Shift("Shift Two", ShiftTwoEmployees);
+		Franchises F1 = new Franchises("Birmingham", "WingStop", 0001, 20);
+		System.out.println(F1.toString());
+		System.out.println(S1.toString());
+		System.out.println(S2.toString());
 		int choice = selectService();
+	
+		
 		provideService(choice);
 
 

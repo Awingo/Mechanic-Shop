@@ -1,12 +1,12 @@
 
 public class Rotation {
 	int rotateType = 0;
-	Double allSeasonRate = (10.00 * 4);
-	Double snowRate = (15.00 * 4);
-	Double performanceRate = (20.00 * 4);
-	Double offRoadRate = (18.00 * 4);
-	Double totalCost = 0.00;
-	Double totalFull = 0.00;
+	double allSeasonRate = (10.00 * 4);
+	double snowRate = (15.00 * 4);
+	double performanceRate = (20.00 * 4);
+	double offRoadRate = (18.00 * 4);
+	double totalCost = 0.00;
+	double totalFull = 0.00;
 	
 	public int rotate(int rotationChoice, int vehicleChoice1){
 		switch(rotationChoice) {
@@ -41,9 +41,9 @@ public class Rotation {
 	}
 	
 	
-	public Double rotateRate(int vehicleChoice1) {
-		Double tax = 0.15;
-		Double taxFull = 0.00;
+	public double rotateRate(int vehicleChoice1) {
+		double tax = 0.15;
+		double taxFull = 0.00;
 		if (rotateType == 1) {
 			taxFull = (allSeasonRate * tax);
 			totalCost = (allSeasonRate + taxFull);
